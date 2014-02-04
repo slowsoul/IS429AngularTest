@@ -16,9 +16,9 @@ controller('MyCtrl1', [function() {
 	$('#todos').addClass('active');
     
     // Load status
-    $scope.loaded = false;
+    $scope.loaded = true;
         
-    var ref = new Firebase('https://is429-demo.firebaseio.com/todos');
+    var ref = new Firebase('https://shenrui1992.firebaseio.com/todos');
     $scope.todos = $firebase(ref);
     $scope.todos.$bind($scope, "todos");
     
@@ -69,7 +69,7 @@ controller('MyCtrl1', [function() {
     }
 
 }])
-.controller('TodoController', [function($scope, $http) {
+.controller('TodoController', ['$scope', '$http', function($scope, $http) {
 	$('#navbar').children('.active').removeClass('active');
 	$('#todos').addClass('active');
 

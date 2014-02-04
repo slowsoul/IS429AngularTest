@@ -51,6 +51,7 @@ app.get('/todos', function(req, res) {
     // Todos returned as an array of todo objects
     todo_collection.find().toArray(function(err, todos) {
         if (!err) {
+            console.log(todos);
             res.json(todos);
         } else {
             // If there's an error, return an empty array

@@ -3,7 +3,7 @@ var express = require('express'),
     app = express(),
     MongoClient = require('mongodb').MongoClient,
     MONGO_PASSWORD = process.env.MONGO_PASSWORD || require('./credentials').MONGO_PASSWORD, 
-    connection_string = 'mongodb://is429_user:' + MONGO_PASSWORD + '@ds039088.mongolab.com:39088/mitb_todos';
+    connection_string = 'mongodb://admin:' + MONGO_PASSWORD + '@ds027699.mongolab.com:27699/is429-todo';
  
 app.set('port', process.env.PORT || 3000);
 app.use(connect.compress());

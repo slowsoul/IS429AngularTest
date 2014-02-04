@@ -1,5 +1,5 @@
 'use strict';
-var firebase_backend = true;
+var firebase_backend = false;
 
 // Declare app level module which depends on filters, and services
 angular.module('myApp', [

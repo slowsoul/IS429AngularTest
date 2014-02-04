@@ -1,0 +1,7 @@
+logs/*
+!.gitkeep
+node_modules/
+tmp
+.DS_Store
+app/credentials.js
+app/main_test.js
